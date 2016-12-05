@@ -44,12 +44,14 @@ Trage Dich mit deiner Mail-Adresse beim StuRa (name@stura.htw-dresden.de) in den
 
 **Beachte!**
 
----------|------------
+ Beschreibung | Mail
+-----|-----
 Mails von/nach außerhalb | stura@stura.htw-dresden.de
 Mails an alle anderen Mitglieder innerhalb vom StuRa | intern@stura.htw-dresden.de
 Mails von/nach außerhalb | stura@stura.htw-dresden.de
-Mails an ein bestimmtes Referat (Bereich) oder anderer Stelle | Übersicht mit allen öffentlichen Mail-Verteilern \\ http://lists.stura.htw-dresden.de/
- | einzelne Seiten auf der StuRa-Website http://www.stura.htw-dresden.de/
+Mails an ein bestimmtes Referat (Bereich) oder anderer Stelle |
+Übersicht mit allen öffentlichen Mail-Verteilern | http://lists.stura.htw-dresden.de/
+einzelne Seiten auf der StuRa-Website | http://www.stura.htw-dresden.de/
 
 **Achtung!**
 
