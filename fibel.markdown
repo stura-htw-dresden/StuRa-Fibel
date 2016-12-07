@@ -19,7 +19,8 @@ Hier ein kleiner Einstieg in den StuRa …
 
 ### Zugang zu den allgemeinen Räumlichkeiten
 
-[…] \\
+[…]
+
 Du kannst grundsätzlich **24 Stunden** in die Verwaltungsräume des StuRa.
 Über deinen (Studentinnen- und) Studentenausweis bekommst du Zugang zu den Verwaltungsräumen des StuRa. Das Referat studentisch Selbstverwaltung &amp; Organisation benötigt dazu die Angabe deiner **Matrikel-Nummer** und die **wievielte Karte** (nach Tausch oder Verlust) du hast. Bezugnehmend auf deine Wahl kannst du dazu eine Mail mit diesen Angaben an zugang@stura-dresden.de senden.
 Nach der Eintragung in das entsprechende System kannst du die Tür im Gang der 1. Etage im A-Gebäude öffnen. Um die Außentür auf der Rückseite vom A-Gebäude zu öffnen, musst du zusätzlich zum Kartenlesegerät noch den Taster betätigen.
@@ -39,7 +40,8 @@ Zur Erstellung braucht das Referat studentisch Selbstverwaltung &amp; Organisati
 
 ### Mail-Verteiler
 
-[…] \\
+[…]
+
 Trage Dich mit deiner Mail-Adresse beim StuRa (name@stura.htw-dresden.de) in den zentralen Mail-Verteiler für alle Mitglieder ein! Die Seite zur Eintragung (und der eigenen Verwaltung deines Eintrages) lautet http://lists.stura.htw-dresden.de/listinfo/mitglieder.
 
 **Beachte!**
