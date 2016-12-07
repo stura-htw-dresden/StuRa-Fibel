@@ -32,3 +32,10 @@ Um auch Zielformate zu entfernen:
 ```bash
 make cleanall
 ```
+
+## Lizensierung
+
+### Inhalte der Fibel
+
+${tbc:Muss noch geklärt werden, s. #1}
+
