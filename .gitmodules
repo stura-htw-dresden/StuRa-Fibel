@@ -1,0 +1,3 @@
+[submodule "img/logo"]
+	path = img/logo
+	url = git@github.com:stura-htw-dresden/htw-logo.git
