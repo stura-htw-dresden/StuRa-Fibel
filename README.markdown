@@ -17,7 +17,8 @@ git submodule update --init img/logo
 make pdf
 ```
 
-Andere Formate wie e-PUB, ODT, HTML entsprechend.
+Der Aufruf des [Submodules](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/ "Introduction to git with submodule") pullt das hier verwendete Logo-Repository vom bereits hinterlegten Remote.
+Andere Formate wie e-PUB, ODT, HTML sind entsprechend auch als Option für `make` möglich, für Näheres einfach in das Makefile sehen.
 
 ## Aufräumen
 
