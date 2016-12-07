@@ -23,7 +23,8 @@ OFN_TEX = $(FN).tex
 OFN_PDF = $(FN).pdf
 OFN_ODT = $(FN).odt
 OFN_EPUB = $(FN).epub
-OF = $(OFN_LOG) $(OFN_HTM) $(OFN_TEX) $(OFN_ODT) $(OFN_EPUB) $(OFN_PDF)
+OFN_DOCX = $(FN).docx
+OF = $(OFN_LOG) $(OFN_HTM) $(OFN_TEX) $(OFN_ODT) $(OFN_EPUB) $(OFN_PDF) $(OFN_DOCX)
 #drop lengthy outfor for commands
 #NOOUT = > $(OFN_LOG) #/dev/null
 NOERR = 2>&1
@@ -76,6 +77,9 @@ tex:
 # works with e.g. 1.15.1
 odt:
 	$(PANDOC) -s -f markdown -t odt -o $(OFN_ODT) $(IFN_MD) $(NOOUT) $(NOERR) && echo "\033[1;32m[ ✔ ]\033[0;39m "$@" substituted includegraphics successfully: "$(OFN_ODT) || echo "\033[1;31m[ ❌ ]\033[0;39m "$@" failed substitution on: "$(OFN_ODT)""
+
+docx:
+	$(PANDOC) -s -f markdown -t odt -o $(OFN_DOCX) $(IFN_MD) $(NOOUT) $(NOERR) && echo "\033[1;32m[ ✔ ]\033[0;39m "$@" substituted includegraphics successfully: "$(OFN_DOCX) || echo "\033[1;31m[ ❌ ]\033[0;39m "$@" failed substitution on: "$(OFN_DOCX)""
 
 #delete targets
 clean:
