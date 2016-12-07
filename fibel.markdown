@@ -44,23 +44,27 @@ Trage Dich mit deiner Mail-Adresse beim StuRa (name@stura.htw-dresden.de) in den
 
 **Beachte!**
 
- Beschreibung | Mail
------|-----
-Mails von/nach außerhalb | stura@stura.htw-dresden.de
-Mails an alle anderen Mitglieder innerhalb vom StuRa | intern@stura.htw-dresden.de
-Mails von/nach außerhalb | stura@stura.htw-dresden.de
-Mails an ein bestimmtes Referat (Bereich) oder anderer Stelle |
-Übersicht mit allen öffentlichen Mail-Verteilern | http://lists.stura.htw-dresden.de/
-einzelne Seiten auf der StuRa-Website | http://www.stura.htw-dresden.de/
++-------------------------------------------+------------------------------------+
+| Beschreibung                              | E-Mail/Adresse                     |
++===========================================+====================================+
+| 1. Mails von/nach außerhalb               | stura@stura.htw-dresden.de         |
+| 2. Mails an alle Mitglieder des StuRa     | intern@stura.htw-dresden.de        |
+|                                           +------------------------------------+
+| 3. Mails von/nach außerhalb               | stura@stura.htw-dresden.de         |
++-------------------------------------------+------------------------------------+
+| Mails an ein bestimmtes Referat (Bereich) | \${bereich}@stura.htw-dresden.de   |
+| Übersicht Mail-Verteiler                  | http://lists.stura.htw-dresden.de/ |
+| einzelne Seiten auf der StuRa-Website     | http://www.stura.htw-dresden.de/   |
++-------------------------------------------+------------------------------------+
 
 **Achtung!**
 
 Bezeichnungen und Mail-Adressen können voneinander abweichen.
 
-Beispiel Bezeichnung | Beispiel Mail-Adresse
------|-----
-Referat Studentische Selbstverwaltung & Organisation | verwaltung@stura.htw-dresden.de
-Referat Qualitätsmanagement | qm@stura.htw-dresden.de
+Beispiel Bezeichnung                                  | Beispiel Mail-Adresse
+------------------------------------------------------|---------------------
+Referat Studentische Selbstverwaltung \& Organisation | verwaltung@stura.htw-dresden.de
+Referat Qualitätsmanagement                           | qm@stura.htw-dresden.de
 
 **Achtung!**
 
@@ -68,20 +72,23 @@ Die Mail-Verteiler sind üblicher Weise so konfiguriert, dass bei wiederholter (
 
 ### Kontaktdaten anderer Mitgliedern
 
-1.  Erst einmal kannst du auf der Website des StuRa schauen. Alle Mitglieder sollen dort eine Seite zur Vorstellung der eigenen Person haben und dort Kontaktdaten angegeben haben. Es kann sein, dass du gewisse Informationen nur siehst, wenn du angemeldet bist, also die intern sind. 
-    **Tipp!**
-    Eine Schulung zur Website gibt es bei der „Einführungsveranstaltung für Neumitglieder“ Terminnachfrage bei schulung@stura.htw-dresden.de
-2.  Zur internen Kommunikation und für verwaltungsorganisatorische Aufgaben gibt es eine Mitgliederübersicht. Sie beinhaltet bestimmte Kontaktdaten. 
-    **Tipp!**
-    Wenn Du auf der Website des StuRa (Plone) angemeldet bist, steht dir der Reiter Intern im Menü (oberer Querbalken) zur Verfügung. Dort findest du dann einen Link Mitgliederdatenbank mit den jeweils bekannten Daten.
+Erst einmal kannst du auf der Website des StuRa schauen. Alle Mitglieder sollen dort eine Seite zur Vorstellung der eigenen Person haben und dort Kontaktdaten angegeben haben. Es kann sein, dass du gewisse Informationen nur siehst, wenn du angemeldet bist, also die intern sind.
+
+**Tipp!**
+Eine Schulung zur Website gibt es bei der „Einführungsveranstaltung für Neumitglieder“ Terminnachfrage bei schulung@stura.htw-dresden.de
+
+Zur internen Kommunikation und für verwaltungsorganisatorische Aufgaben gibt es eine Mitgliederübersicht. Sie beinhaltet bestimmte Kontaktdaten.
+
+**Tipp!**
+Wenn Du auf der Website des StuRa (Plone) angemeldet bist, steht dir der Reiter Intern im Menü (oberer Querbalken) zur Verfügung. Dort findest du dann einen Link Mitgliederdatenbank mit den jeweils bekannten Daten.
 
 ## Accounts
 
 
 
-Dienst  | zentrale E-Mail des StuRa
-Mail-Adresse | mail@stura.htw-dresden.de
-Symbol | ![postfix-maus]()
+Dienst           | zentrale E-Mail des StuRa
+Mail-Adresse     | mail@stura.htw-dresden.de
+Symbol           | <!-- ![postfix-maus]() -->
 Funktion/Aufgabe | Weiterleitung an deine Mail-Adresse bei der Hochschule (s<nummer>@htw-dresden.de)
 Bezeichnung vom Account
 
@@ -96,10 +103,6 @@ Mail-Adresse
 Symbol 
 Funktion/Aufgabe
 Bezeichnung vom Account
-
-
-
-
 
 [   ] Account erstellen lassen
 [   ] Account zum Versenden von Mails mit der Mail-Adresse ein

@@ -1,0 +1,100 @@
+\documentclass[english,11pt,paper=a4,DIV=calc]{scrartcl}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage[top=3cm,bottom=3cm]{geometry}
+\usepackage[colorlinks=false, pdfborderstyle={/S/U/W 1}]{hyperref}
+\usepackage{graphicx}
+\usepackage{calc}
+\usepackage{longtable}
+\usepackage{bookmark}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{ifxetex}
+\usepackage{ifluatex}
+\usepackage{listings}
+\usepackage{fancyvrb}
+\usepackage{url}
+\usepackage{titling}
+
+\usepackage[normalem]{ulem}	%options: normalem | ULformem
+%~ \usepackage{fontspec} %requires either XeTeX or LuaTeX
+%~ \usepackage{xltxtra} %requires XeTeX
+%~ \usepackage{xunicode} %requires XeTeX
+
+% Makros zur Skalierung und Logo-Definition
+\input{img/logo/scale-makro.inc}
+\input{img/logo/stura-logo.inc}
+
+\newlength{\imgwidth}
+\newlength{\imgwidthmax}
+\setlength{\imgwidthmax}{0.3\paperheight}
+
+\newcommand\scalegraphics[1]{%   
+    \settowidth{\imgwidth}{\includegraphics{#1}}%
+    \setlength{\imgwidth}{\minof{\imgwidthmax}{\minof{\imgwidth}{\textwidth}}}%
+    \includegraphics[width=0.9\imgwidth]{#1}%
+}
+
+% fixes pandoc, maybe omitted with sed in Makefile instead
+%\providecommand{\tightlist}{%
+%  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+%\providecommand{\toprule}{}
+%\let\longtable\table
+%\let\endlongtable\endtable
+
+% see further: http://tex.stackexchange.com/questions/257418/error-tightlist-converting-md-file-into-pdf-using-pandoc#258486
+
+\title{StuRa-Fibel}
+
+\subtitle{Einstiegsleitfaden für neue Mitglieder beim StuRa HTW Dresden}
+
+\author{
+	\emph{Paul Riegel}
+	\and
+	\emph{Beata Volke}
+	\and
+	others
+}
+
+\date{}%no date on document for now, otherwise use:
+%\date{\today}
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	\hspace{1cm}\\
+	\vfill
+
+	\begin{figure}[htbp]
+		\centering
+		\begin{scaletikzpicturetowidth}{\textwidth}%
+			\sturalogo{}%
+		\end{scaletikzpicturetowidth}
+	\end{figure}
+	\vspace{3cm}
+
+	{\scshape\Huge \thetitle \par}
+	%\vspace{1cm} {\Large \thesubtitle \par}
+	\vfill
+
+	\emph{von\\%
+		\vspace{1em}
+		\theauthor
+	}
+
+	\newpage
+
+\end{titlepage}
+
+%\maketitle
+%\vfill
+%\tableofcontents
+
+\tableofcontents
+
+\include{./fibel}
+
+\end{document}
