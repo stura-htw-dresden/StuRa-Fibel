@@ -42,7 +42,20 @@ NOERR = 2>&1
 #
 ###
 
-.PHONY: all
+.PHONY: help
+
+help:
+	echo "make [target]\n\ntarget\t– Option für das gewünschte Zielverhalten\n"
+	echo "\tall : Alle verfügbaren Ziele werden gebaut\n"
+	echo "\tclean : Alle Nebenprodukte der Zeilformate (Log-Dateien usw.) werden gelöscht\n"
+	echo "\tcleanall : Alle zuvor gebauten Zielformate werden gelöscht\n"
+	echo "\tpdf : Eine Druckvorlage wird als PDF erstellt\n"
+	echo "\tepub : Ein eBook im Format ePUB wird erstellt\n"
+	echo "\thtml : Ein HTML-Dokument wird erstellt (Bilder sind nicht eingebettet)\n"
+	echo "\thtml5 : Ein HTML5-Dokument wird erstellt (Bilder sind nicht eingebettet)\n"
+	echo "\ttex : Die Quellen werden nach LaTeX übersetzt (Bilder sind nicht eingebettet)\n"
+	echo "\tdocx : Die Quellen werden in ein DOCX (Microsoft Office / Word) übersetzt\n"
+	echo "\tdocx : Die Quellen werden in ein ODT (Libre Office / Writer) übersetzt\n"
 
 all: html5 pdf epub odt
 
@@ -90,3 +103,4 @@ clean:
 cleanall: clean
 	@rm -f *.log $(NOOUT) $(NOERR) || true
 	@rm -f $(OF) $(NOOUT) $(NOERR) || true
+
