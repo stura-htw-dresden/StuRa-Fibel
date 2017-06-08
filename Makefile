@@ -45,17 +45,19 @@ NOERR = 2>&1
 .PHONY: help
 
 help:
-	echo "make [target]\n\ntarget\t– Option für das gewünschte Zielverhalten\n"
-	echo "\tall : Alle verfügbaren Ziele werden gebaut\n"
-	echo "\tclean : Alle Nebenprodukte der Zeilformate (Log-Dateien usw.) werden gelöscht\n"
-	echo "\tcleanall : Alle zuvor gebauten Zielformate werden gelöscht\n"
-	echo "\tpdf : Eine Druckvorlage wird als PDF erstellt\n"
-	echo "\tepub : Ein eBook im Format ePUB wird erstellt\n"
-	echo "\thtml : Ein HTML-Dokument wird erstellt (Bilder sind nicht eingebettet)\n"
-	echo "\thtml5 : Ein HTML5-Dokument wird erstellt (Bilder sind nicht eingebettet)\n"
-	echo "\ttex : Die Quellen werden nach LaTeX übersetzt (Bilder sind nicht eingebettet)\n"
-	echo "\tdocx : Die Quellen werden in ein DOCX (Microsoft Office / Word) übersetzt\n"
-	echo "\tdocx : Die Quellen werden in ein ODT (Libre Office / Writer) übersetzt\n"
+	@echo "\nStuRa Fibel – wir bauen uns das selbst!"
+	@echo "=======================================\n"
+	@echo "make [target]\n\ntarget\t– Option für das gewünschte Zielverhalten\n"
+	@echo "\tall : Alle verfügbaren Zielformate werden gebaut\n"
+	@echo "\tclean : Alle Nebenprodukte der Zeilformate (Log-Dateien usw.) werden gelöscht\n"
+	@echo "\tcleanall : Alle zuvor gebauten Zielformate werden gelöscht\n"
+	@echo "\tpdf : Eine Druckvorlage wird als PDF erstellt\n"
+	@echo "\tepub : Ein eBook im Format ePUB wird erstellt\n"
+	@echo "\thtml : Ein HTML-Dokument wird erstellt (Bilder sind nicht eingebettet)\n"
+	@echo "\thtml5 : Ein HTML5-Dokument wird erstellt (Bilder sind nicht eingebettet)\n"
+	@echo "\ttex : Die Quellen werden nach LaTeX übersetzt (Bilder sind nicht eingebettet)\n"
+	@echo "\tdocx : Die Quellen werden in ein DOCX (Microsoft Office / Word) übersetzt\n"
+	@echo "\todt : Die Quellen werden in ein ODT (Libre Office / Writer) übersetzt\n"
 
 all: html5 pdf epub odt
 
@@ -74,6 +76,8 @@ html:
 pdf: tex
 #	@$(PDFTEX) $(TFN_TEX) $(NOOUT) $(NOERR) && echo "\033[1;32m[ ✔ ]\033[0;39m "$@" created successfully: "$(TFN_TEX) || echo "\033[1;31m[ ❌ ]\033[0;39m "$@" failed on: "$(TFN_TEX)
 	@$(PDFTEX) $(TFN_TEX) $(NOOUT) $(NOERR) && mv $(FN)-wrapper.pdf $(OFN_PDF) && echo "\033[1;32m[ ✔ ]\033[0;39m "$@" created successfully: "$(OFN_PDF) || echo "\033[1;31m[ ❌ ]\033[0;39m "$@" failed on: "$(OFN_PDF)
+
+latex: tex
 
 tex:
 	@$(PANDOC) -f markdown -t latex -o $(OFN_TEX) $(IFN_MD) && echo "\033[1;32m[ ✔ ]\033[0;39m "$@" created successfully: "$(OFN_TEX) || printf "\033[1;31m[ ❌ ]\033[0;39m "$@" failed creation on: "$(OFN_TEX)""
