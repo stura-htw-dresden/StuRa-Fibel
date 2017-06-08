@@ -49,7 +49,7 @@ help:
 	@echo "=======================================\n"
 	@echo "make [target]\n\ntarget\t– Option für das gewünschte Zielverhalten\n"
 	@echo "\tall : Alle verfügbaren Zielformate werden gebaut\n"
-	@echo "\tclean : Alle Nebenprodukte der Zeilformate (Log-Dateien usw.) werden gelöscht\n"
+	@echo "\tclean : Alle Nebenprodukte der Zielformate (Log-Dateien usw.) werden gelöscht\n"
 	@echo "\tcleanall : Alle zuvor gebauten Zielformate werden gelöscht\n"
 	@echo "\tpdf : Eine Druckvorlage wird als PDF erstellt\n"
 	@echo "\tepub : Ein eBook im Format ePUB wird erstellt\n"
@@ -93,10 +93,10 @@ tex:
 # odt opens in libre office with message: "error reading file" due to old pandoc version (1.11.1)
 # works with e.g. 1.15.1
 odt:
-	$(PANDOC) -s -f markdown -t odt -o $(OFN_ODT) $(IFN_MD) $(NOOUT) $(NOERR) && echo "\033[1;32m[ ✔ ]\033[0;39m "$@" substituted includegraphics successfully: "$(OFN_ODT) || echo "\033[1;31m[ ❌ ]\033[0;39m "$@" failed substitution on: "$(OFN_ODT)""
+	@$(PANDOC) -s -f markdown -t odt -o $(OFN_ODT) $(IFN_MD) $(NOOUT) $(NOERR) && echo "\033[1;32m[ ✔ ]\033[0;39m "$@" substituted includegraphics successfully: "$(OFN_ODT) || echo "\033[1;31m[ ❌ ]\033[0;39m "$@" failed substitution on: "$(OFN_ODT)""
 
 docx:
-	$(PANDOC) -s -f markdown -t odt -o $(OFN_DOCX) $(IFN_MD) $(NOOUT) $(NOERR) && echo "\033[1;32m[ ✔ ]\033[0;39m "$@" substituted includegraphics successfully: "$(OFN_DOCX) || echo "\033[1;31m[ ❌ ]\033[0;39m "$@" failed substitution on: "$(OFN_DOCX)""
+	@$(PANDOC) -s -f markdown -t odt -o $(OFN_DOCX) $(IFN_MD) $(NOOUT) $(NOERR) && echo "\033[1;32m[ ✔ ]\033[0;39m "$@" substituted includegraphics successfully: "$(OFN_DOCX) || echo "\033[1;31m[ ❌ ]\033[0;39m "$@" failed substitution on: "$(OFN_DOCX)""
 
 #delete targets
 clean:
